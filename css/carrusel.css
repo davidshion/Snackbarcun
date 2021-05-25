@@ -1,0 +1,62 @@
+.cuadros {
+	/*margen fuera de su contorno*/
+	/*espacion de ancho dentro del contorno*/
+	width: auto;
+	height: 99%;
+	/*corte fuera de su contorno*/
+    overflow: hidden;
+	/*contorno sobrepuesto o flexible para encaje*/
+	
+
+}
+
+.cuadros ul {
+	/*quita los puntos feos de las listas*/
+	list-style: none;
+	/*contorno sobrepuesto o flexible para encaje*/
+	display: flex;
+	/*espacion del cuadro de separacion*/
+	width: 350%;
+	animation: cambio 22s infinite alternate;
+	animation-timing-function: linear;
+}
+
+.cuadros p  {
+	margin: 0% 0.5% 0% 0%;
+	opacity: 0.5;
+}
+
+img {
+	border-radius: 5%
+}
+
+@keyframes cambio{
+	0% { margin-left: 0%;}
+	100% { margin-left: -60%;}
+}
+
+@media screen and (max-width: 1300px){
+
+img {
+	width: 800px;
+	height: 500px;
+}
+
+
+.cuadros ul {
+	animation: cambio 30s infinite alternate;
+	animation-timing-function: linear;
+}
+
+.cuadros p  {
+	margin: 0% 1.5% 0% 0%;
+	opacity: 0.5;
+	border-radius: 50%;
+}
+
+@keyframes cambio{
+	0% { margin-left: 0%;}
+	100% { margin-left: -168%;}
+}
+
+}

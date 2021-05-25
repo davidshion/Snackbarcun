@@ -1,0 +1,237 @@
+*{
+background: #E27FAB;
+}
+
+/*<div class="uno"><h2>1x $130</h2></div>
+<div class="dos"><h2>2x $180</h2></div>
+<div class="tres"><h2>3x $280</h2></div>
+<div class="cuatro"><h2>4x $320</h2></div>*/
+.contenedor{
+	text-align: center;
+	color: #fff;
+
+	width: 95%;
+	max-width: 1300px;
+	margin: 50px auto;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(7, auto);
+	grid-template-areas: "delizr deliz delizp"
+	                     "mapa mapa mapa"
+	                     "carrusel carrusel contacto"
+	                     "carrusel carrusel contacto"
+	                     "carrusel carrusel contacto"
+	                     "arandano arandano zarsamora"
+	                     "uva uva zarsamora";
+	background: #E27FAB;
+}
+
+.mapa{
+	grid-area: mapa;
+}
+.deliz{
+grid-area: deliz;
+}
+.deliz h1{
+color: #ff0000;
+font-size: 80px;
+margin-top: -30px; 
+}
+
+.delizr{
+grid-area: delizr;
+height: auto;
+}
+.delizr h2{
+background: #27408b;
+color: #fff;
+font-size: 40px;
+margin: 30px;
+padding: 30px;
+border-radius: 100%;
+}
+
+.delizp{
+grid-area: delizp;
+height: auto;
+}
+.delizp h2{
+background: #27408b;
+color: #fff;
+font-size: 40px;
+margin: 30px;
+padding: 30px;
+border-radius: 100%;
+}
+
+.contenedor .cuadros{
+	grid-area: carrusel;
+}
+.unos img{
+	width: 320px;
+	height: 320px;
+}
+
+.uno,
+.dos,
+.tres,
+.cuatro{
+	color: #228b22;
+	font-size: 25px;
+	background: #000;
+}
+
+
+.arandano div{
+background: transparent;
+width: 90%;
+background: #9400d3;
+border-radius: 10%;
+}
+.arandano{
+background: transparent;
+grid-area: arandano;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+.uva div{
+background: transparent;
+width: 90%;
+background: #ee82ee;
+border-radius: 10%;
+}
+.uva{
+background: transparent;
+grid-area: uva;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+
+.zarsamora{
+
+background: #6a5acd;
+grid-area: zarsamora;
+border-radius: 5%;
+padding-bottom: 20px;
+}
+
+.arandano h1,
+.zarsamora h1,
+.uva h1{
+background: transparent;
+padding: 10px;
+font-size: 40px;
+}
+.arandano p,
+.zarsamora p,
+.uva p{
+background: transparent;
+padding: 20px;
+font-size: 30px;
+margin: 0px;
+padding: 3px;
+}
+
+.contacto{
+	margin-top: 20px;
+	grid-area: contacto;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 50%;
+	margin-left: 120px;
+}
+.contacto a{
+	background: #fff;
+}
+.contacto img{
+	background: #fff;
+	margin: 20px;
+	width: 60px;
+	height: auto;
+}
+
+@media screen and (max-width: 1300px){
+
+.contenedor{
+	text-align: center;
+	color: #fff;
+
+	width: 95%;
+	max-width: 1300px;
+	margin: 50px auto;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(8, auto);
+	grid-template-areas: "delizr deliz delizp"
+	                     "mapa mapa mapa"
+	                     "carrusel carrusel carrusel"
+	                     "carrusel carrusel carrusel"
+	                     "contacto contacto contacto"	                     	                   
+	                     "arandano arandano arandano"
+	                     "zarsamora zarsamora zarsamora"
+	                     "uva uva uva";
+	                     
+	background: #E27FAB;
+}
+
+
+.arandano div{
+margin-top: 50px;
+padding-bottom: 20px;
+}
+.uva div{
+padding-bottom: 20px;
+}
+.deliz h1{
+color: #ff0000;
+font-size: 70px;
+margin-top: -30px; 
+}
+.delizr h2{
+background: #27408b;
+color: #fff;
+font-size: 10px;
+margin: 3px;
+padding: 30px;
+border-radius: 100%;
+}
+.delizp h2{
+background: #27408b;
+color: #fff;
+font-size: 10px;
+margin: 3px;
+padding: 30px;
+border-radius: 100%;
+}
+
+.contacto{
+	flex-direction: row;
+	height: 100%;
+	width: 100%;
+	margin-left: 0px;
+}
+.contacto a{
+	background: #fff;
+	width: 33.33%;
+}
+.contacto img{
+	background: #fff;
+	margin: 20px;
+	width: 90px;
+	height: auto;
+}
+.unos img{
+	width: 650px;
+	height: 550px;
+}
+
+}
+
+
+/*grid-area: cuadros;
+grid-template-areas: "cuadros cuadros cuadros cuadros cuadros cuadros"
+	                     "a a a a a a"
+	                     "uno uno uno uno contacto contacto";*/

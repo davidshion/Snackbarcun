@@ -1,0 +1,53 @@
+
+h2 {
+  font: 30px sans-serif;
+  margin-top: 2px;
+  text-align: center;
+}
+h2.linea {
+  position: relative;
+  z-index: 1;
+}
+h2.linea:before {
+  border-top: 4px solid #fff000;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+h2.linea img {
+  width: 150px;
+	height: auto;
+	/*aspecto redondo*/
+	border-radius: 50%;
+}
+
+h1 {
+	color: #fff;
+  text-align:center;
+}
+
+@media screen and (max-width: 1300px){
+
+h2 {
+  font-size: 30px;
+}
+h2.linea:before {
+  border-top: 8px solid #fff000;
+}
+
+h2.linea img {
+  width: 15%;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+}
