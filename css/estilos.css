@@ -1,5 +1,6 @@
 *{
-background: #E27FAB;
+background: #FFD1D1;
+
 }
 
 /*<div class="uno"><h2>1x $130</h2></div>
@@ -8,7 +9,7 @@ background: #E27FAB;
 <div class="cuatro"><h2>4x $320</h2></div>*/
 .contenedor{
 	text-align: center;
-	color: #fff;
+	color: #FFD1D1;
 
 	width: 95%;
 	max-width: 1300px;
@@ -24,18 +25,20 @@ background: #E27FAB;
 	                     "carrusel carrusel contacto"
 	                     "arandano arandano zarsamora"
 	                     "uva uva zarsamora";
-	background: #E27FAB;
 }
 
 .mapa{
-	grid-area: mapa;
+grid-area: mapa;
 }
 .deliz{
 grid-area: deliz;
 }
 .deliz h1{
-color: #ff0000;
-font-size: 80px;
+font-family: 'Lemonada', cursive;
+color: #fff;
+font-size: 60px;
+text-shadow: -1px -1px 5px red, 5px -1px 5px red, -1px 5px 5px red, 5px 5px 5px red;
+font-size: 70px;
 margin-top: -30px; 
 }
 
@@ -44,7 +47,8 @@ grid-area: delizr;
 height: auto;
 }
 .delizr h2{
-background: #27408b;
+font-family: 'Playfair Display', serif; 
+background: #E27FAB;
 color: #fff;
 font-size: 40px;
 margin: 30px;
@@ -55,9 +59,11 @@ border-radius: 100%;
 .delizp{
 grid-area: delizp;
 height: auto;
+
 }
 .delizp h2{
-background: #27408b;
+	font-family: 'Playfair Display', serif; 
+background: #E27FAB;
 color: #fff;
 font-size: 40px;
 margin: 30px;
@@ -86,8 +92,9 @@ border-radius: 100%;
 .arandano div{
 background: transparent;
 width: 90%;
-background: #9400d3;
+background: #E27FAB;
 border-radius: 10%;
+border: 8px solid #000;
 }
 .arandano{
 background: transparent;
@@ -98,8 +105,9 @@ grid-template-columns: repeat(2, 1fr);
 .uva div{
 background: transparent;
 width: 90%;
-background: #ee82ee;
+background: #E27FAB;
 border-radius: 10%;
+border: 8px solid #000;
 }
 .uva{
 background: transparent;
@@ -109,11 +117,12 @@ grid-template-columns: repeat(2, 1fr);
 }
 
 .zarsamora{
-
-background: #6a5acd;
+background: #E27FAB;
 grid-area: zarsamora;
-border-radius: 5%;
+border-radius: 2.5%;
+border: 8px solid #000;
 padding-bottom: 20px;
+
 }
 
 .arandano h1,
@@ -122,6 +131,8 @@ padding-bottom: 20px;
 background: transparent;
 padding: 10px;
 font-size: 40px;
+font-family: 'Playfair Display', serif; 
+
 }
 .arandano p,
 .zarsamora p,
@@ -129,6 +140,7 @@ font-size: 40px;
 background: transparent;
 padding: 20px;
 font-size: 30px;
+font-family: 'Playfair Display', serif; 
 margin: 0px;
 padding: 3px;
 }
@@ -156,7 +168,6 @@ padding: 3px;
 
 .contenedor{
 	text-align: center;
-	color: #fff;
 
 	width: 95%;
 	max-width: 1300px;
@@ -165,7 +176,7 @@ padding: 3px;
 	grid-gap: 30px;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(8, auto);
-	grid-template-areas: "delizr deliz delizp"
+	grid-template-areas: "deliz deliz deliz"
 	                     "mapa mapa mapa"
 	                     "carrusel carrusel carrusel"
 	                     "carrusel carrusel carrusel"
@@ -173,38 +184,40 @@ padding: 3px;
 	                     "arandano arandano arandano"
 	                     "zarsamora zarsamora zarsamora"
 	                     "uva uva uva";
-	                     
-	background: #E27FAB;
 }
 
 
 .arandano div{
 margin-top: 50px;
 padding-bottom: 20px;
+border: 10px solid #000;
 }
 .uva div{
 padding-bottom: 20px;
+border: 10px solid #000;
+}
+.zarsamora{
+	border: 12px solid #000;
 }
 .deliz h1{
-color: #ff0000;
-font-size: 70px;
+
 margin-top: -30px; 
 }
 .delizr h2{
-background: #27408b;
 color: #fff;
-font-size: 10px;
+font-size: 9px;
 margin: 3px;
-padding: 30px;
+padding: 10%;
 border-radius: 100%;
+display: none;
 }
 .delizp h2{
-background: #27408b;
 color: #fff;
-font-size: 10px;
-margin: 3px;
+font-size: 9px;
+margin: 1px;
 padding: 30px;
 border-radius: 100%;
+display: none;
 }
 
 .contacto{
@@ -214,11 +227,9 @@ border-radius: 100%;
 	margin-left: 0px;
 }
 .contacto a{
-	background: #fff;
 	width: 33.33%;
 }
 .contacto img{
-	background: #fff;
 	margin: 20px;
 	width: 90px;
 	height: auto;
